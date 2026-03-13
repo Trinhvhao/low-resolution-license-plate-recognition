@@ -1,10 +1,10 @@
-# Low-Resolution License Plate Recognition - ICPR
+# Low-Resolution License Plate Recognition - ICPR 2026
 
 Một dự án nhận dạng biển số xe từ ảnh độ phân giải thấp sử dụng các kỹ thuật Deep Learning tiên tiến.
 
 ## 📋 Mô Tả Dự Án
 
-Dự án này được phát triển cho cuộc thi ICPR (International Conference on Pattern Recognition) nhằm giải quyết bài toán nhận dạng biển số xe từ các ảnh có độ phân giải thấp. Bao gồm:
+Dự án này được phát triển cho cuộc thi ICPR 2026 (International Conference on Pattern Recognition) nhằm giải quyết bài toán nhận dạng biển số xe từ các ảnh có độ phân giải thấp. Bao gồm:
 
 - **Super-Resolution (SR)**: Nâng cao độ phân giải ảnh biển số
 - **Detection**: Phát hiện vị trí biển số trong ảnh
@@ -110,4 +110,4 @@ print(result)
 
 ## 👨‍💻 Tác Giả
 
-Trình Văn Hào
+**Trịnh Văn Hào**
