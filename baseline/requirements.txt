@@ -1,0 +1,25 @@
+# Phase 1 Dependencies - Enhanced Multi-Frame LPR
+
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data Augmentation
+albumentations>=1.3.0
+
+# Metrics & Evaluation
+editdistance>=0.6.0
+
+# Logging & Visualization
+tensorboard>=2.11.0
+
+# Utils
+opencv-python>=4.8.0
+numpy>=1.24.0
+tqdm>=4.65.0
+Pillow>=10.0.0
+
+# Phase 1 additions
+torchvision>=0.15.0  # For ResNet-34 pretrained
+tensorboard>=2.12.0  # TensorBoard logging
+editdistance>=0.6.0  # For CER calculation

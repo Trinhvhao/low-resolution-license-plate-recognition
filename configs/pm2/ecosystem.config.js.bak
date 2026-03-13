@@ -1,0 +1,38 @@
+module.exports = {
+  apps: [{
+    name: 'lpr-training',
+    script: './run_training.sh',
+    cwd: '/home/nhannv/Hello/AI_Ngoc_Dung/TrinhHao/OCR_ICPR',
+    interpreter: '/bin/bash',
+    
+    // Logging
+    output: './logs/training-out.log',
+    error: './logs/training-error.log',
+    log: './logs/training-combined.log',
+    
+    // PM2 behavior
+    autorestart: false,  // Không auto restart khi training xong
+    max_restarts: 3,     // Tối đa 3 lần restart nếu crash
+    restart_delay: 5000, // Delay 5s trước khi restart
+    
+    // Environment
+    env: {
+      NODE_ENV: 'production',
+      CUDA_VISIBLE_DEVICES: '0',
+      PYTHONUNBUFFERED: '1',
+      PYTORCH_CUDA_ALLOC_CONF: 'max_split_size_mb:512'
+    },
+    
+    // Monitoring
+    time: true,          // Thêm timestamp vào logs
+    merge_logs: true,    // Merge logs từ nhiều instances
+    
+    // Resource limits (optional)
+    max_memory_restart: '20G',  // Restart nếu vượt 20GB RAM
+    
+    // Metadata
+    instance_var: 'INSTANCE_ID',
+    exec_mode: 'fork',
+    instances: 1
+  }]
+};

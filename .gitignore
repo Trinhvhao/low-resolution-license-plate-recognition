@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.venv
+env/
+venv/
+
+# Models - exclude all
+best_models/*.pth
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and outputs
+logs/
+runs/
+outputs/
+
+# Data
+dataset/
+*.jpg
+*.png
+*.jpeg
+
+# Temp files
+.DS_Store
+*.log
